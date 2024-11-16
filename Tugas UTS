@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <style>
+        /* Styling tambahan untuk tombol dan font */
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            /* Smooth scrolling effect */
+        }
+
+        .navbar {
+            background-color: #343a40;
+            /* Dark background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Shadow for depth */
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff !important;
+            /* White color */
+        }
+
+        .nav-link {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            /* White color */
+            transition: color 0.3s;
+            /* Smooth transition */
+        }
+
+        .nav-link:hover {
+            color: #0d6efd;
+            /* Change color on hover */
+            text-decoration: underline;
+            /* Underline on hover */
+        }
+
+        .btn-custom {
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        section {
+            padding: 100px 0;
+            min-height: 100vh;
+            /* Ensures each section takes up the full screen */
+        }
+
+        #home {
+            background-color: #f8f9fa;
+        }
+
+        #about {
+            background-color: #e9ecef;
+        }
+
+        #portfolio {
+            background-color: #f8f9fa;
+        }
+
+        #skills {
+            background-color: #e9ecef;
+        }
+
+        #contact {
+            background-color: #f8f9fa;
+        }
+
+        /* Fixed-top navbar padding fix */
+        .offset {
+            padding-top: 75px;
+        }
+        </style>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">PORTOFOLIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                <i class="fas fa-user"></i> About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">
+                                <i class="fas fa-briefcase"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">
+                                <i class="fas fa-tools"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                <i class="fas fa-envelope"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sections -->
+        <section id="home" class="offset" style="background: rgba(10, 10, 10, 0.2) url('images/gedung.jpg') no-repeat center center; background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
+            <div class="container" style="padding: 20px;">
+                <h1 style="text-align: left; font-family: Arial, sans-serif; font-size: 70px; color: rgb(20, 20, 19); font-weight: bold;">
+                    Hey I'm Chandra, <br>App Developer
+                </h1>
+            </div>
+        </section>
+        
+                    
+        <section id="about" class="offset" style="background: rgba(0, 0, 0, 0.5) url('images/R.jpeg'); padding: 30px; border-radius: 10px;">
+            <div class="container text-center">
+                <h2>About Me</h2>
+                <p></p>
+                <img src="images/tentang-saya.jpeg" alt="Your Photo" class="img-fluid" style="width: 200px; height: 200px;">
+                <p></p>
+                <p>Halo! Nama saya Chandra Nur Avisena, dan saya adalah seorang Pengembang Aplikasi dengan semangat untuk menciptakan aplikasi yang inovatif dan ramah pengguna. Saat ini, saya sedang menempuh studi di bidang Informatika di Universitas Pembangunan Jaya. Saya memiliki keahlian dalam desain UI/UX, pemrograman, dan pengembangan aplikasi. Dengan dasar yang kuat dalam analisis data dan pemecahan masalah, saya bertujuan untuk memberikan solusi berkualitas tinggi yang disesuaikan dengan kebutuhan pengguna. Misi saya adalah terus belajar dan berkontribusi pada bidang teknologi yang terus berkembang dengan menciptakan aplikasi yang berdampak untuk meningkatkan kehidupan dan bisnis.
+            </div>
+        </section>
+
+        <section id="portfolio" class="offset">
+            <div class="container text-center">
+                <h2>My Portfolio</h2>
+                <p>Berikut adalah beberapa proyek yang telah saya kerjakan </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/ok.jpeg" alt="Project Image 1" class="img-fluid rounded mb-2">
+                        <h5>Project 1</h5>
+                        <p>mendesain tampilan aplikasi OKEJEK</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/ma.jpeg" alt="Project Image 2" class="img-fluid rounded mb-2">
+                        <h5>Project 2</h5>
+                        <p>Chicmart menyajikan katalog potongan ayam berkualitas tinggi dengan deskripsi yang jelas dan harga yang transparan. Project ini memudahkan pengguna agar tidak perlu ke pasar untuk membeli ayam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="offset">
+            <div class="container text-center">
+                <h2>Skills</h2>
+                <p>keterampilan yang saya miliki yaitu:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Frameworks</li>
+                    <li class="list-group-item">Database</li>
+                    <li class="list-group-item">PHP & MySQL</li>
+                    <li class="list-group-item">Desain UI/UX</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="offset">
+            <div class="container text-center">
+                <h2>Contact Me</h2>
+                <p>Saya senang mendapat kabar dari Anda! Hubungi saya untuk berkolaborasi!</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
